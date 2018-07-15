@@ -178,6 +178,11 @@
 				<text>%tw_version%</text>
 			</text>
 
+			<text style="text_m">
+				<placement x="%row3_input_y%" y="%row4_header_y%"/>
+				<text>{@author_youyim=by youyim %recovery_build_date%}</text>
+			</text>
+
 			<button style="main_button">
 				<placement x="%indent%" y="%row2a_y%"/>
 				<text>{@install_btn=Install}</text>

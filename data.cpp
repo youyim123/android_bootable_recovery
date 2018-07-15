@@ -774,6 +774,7 @@ void DataManager::SetDefaultValues()
 	mData.SetValue("tw_encrypt_backup", "0");
 	mData.SetValue("tw_sleep_total", "5");
 	mData.SetValue("tw_sleep", "5");
+	mConst.SetValue(RECOVERY_BUILD_DATE_VAR, RECOVERY_BUILD_DATE);
 
 	// Brightness handling
 	string findbright;
