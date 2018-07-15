@@ -3500,6 +3500,12 @@
 			</button>
 
 			<button style="main_button">
+				<placement x="%center_x%" y="%row19_y%"/>
+				<text>{@youyim_tools=Youyim Tools}</text>
+				<action function="page">youyim</action>
+			</button>
+
+			<button style="main_button">
 				<condition var1="tw_show_dumlock" var2="1"/>
 				<placement x="%center_x%" y="%row19_y%"/>
 				<text>{@dumlock_btn=HTC Dumlock}</text>
@@ -4756,6 +4762,70 @@
 					<action function="page">singleaction_page</action>
 				</actions>
 			</slider>
+		</page>
+
+		<page name="youyim">
+			<template name="page"/>
+
+			<text style="text_l">
+				<placement x="%col1_x_header%" y="%row3_header_y%"/>
+				<text>{@youyim_tools_hdr=Youyim Tools}</text>
+			</text>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row2a_y%"/>
+				<text>{@stock_recovery_btn=Stock Recovery}</text>
+				<actions>
+					<action function="set">tw_back=youyim</action>
+					<action function="set">tw_action=stockrecovery</action>
+					<action function="set">tw_text1={@flash_stock_recovery_confirm=Flash Stock Recovery?}</action>
+					<action function="set">tw_action_text1={@flash_stock_recovery2=only work on stock ROM}</action>
+					<action function="set">tw_action_text2={@flash_stock_recovery3=It does not work,please flash Stock ROM}</action>
+					<action function="set">tw_action_text3={@flash_stock_recovery=Flashing Stock Recovery...}</action>
+					<action function="set">tw_complete_text1={@flash_stock_recovery_complete=Flash Stock Recovery Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row2a_y%"/>
+				<text>{@verified_bootsigner_btn=Verified BootSigner}</text>
+				<actions>
+					<action function="set">tw_back=youyim</action>
+					<action function="set">tw_action=signboot</action>
+					<action function="set">tw_text1={@verifiedbootsigner_device_confirm=verified bootsigner?}</action>
+					<action function="set">tw_action_text1={@verifiedbootsigner_device=verified bootsigner...}</action>
+					<action function="set">tw_complete_text1={@verifiedbootsigner_device_complete=verified bootsigner Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row8_y%"/>
+				<text>{@wipe_battery_stats_btn=Wipe Battery Stats}</text>
+				<actions>
+					<action function="set">tw_back=youyim</action>
+					<action function="set">tw_action=wipe</action>
+					<action function="set">tw_action_param=battery</action>
+					<action function="set">tw_text1={@wipe_battery_stats_confirm=Wipe Battery Stats?}</action>
+					<action function="set">tw_action_text1={@wipe_battery_stats=Wiping Battery Stats...}</action>
+					<action function="set">tw_complete_text1={@wipe_battery_stats_complete=Wipe Battery Stats Complete}</action>
+					<action function="set">tw_slider_text={@swipe_wipe=Swipe to Wipe}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">advanced</action>
+			</action>
 		</page>
 
 		<page name="slideout">

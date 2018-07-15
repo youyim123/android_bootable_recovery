@@ -351,6 +351,8 @@ protected:
 	int adbsideloadcancel(std::string arg);
 	int openrecoveryscript(std::string arg);
 	int installsu(std::string arg);
+	int stockrecovery(std::string arg);
+	int signboot(std::string arg);
 	int fixsu(std::string arg);
 	int decrypt_backup(std::string arg);
 	int repair(std::string arg);

@@ -223,6 +223,8 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(adbsideload);
 		ADD_ACTION(openrecoveryscript);
 		ADD_ACTION(installsu);
+		ADD_ACTION(stockrecovery);
+		ADD_ACTION(signboot);
 		ADD_ACTION(decrypt_backup);
 		ADD_ACTION(repair);
 		ADD_ACTION(resize);
@@ -1608,6 +1610,38 @@ int GUIAction::installsu(std::string arg __unused)
 		simulate_progress_bar();
 	} else {
 		if (!TWFunc::Install_SuperSU())
+			op_status = 1;
+	}
+
+	operation_end(op_status);
+	return 0;
+}
+
+int GUIAction::stockrecovery(std::string arg __unused)
+{
+	int op_status = 0;
+
+	operation_start("Stock Recovery");
+	if (simulate) {
+		simulate_progress_bar();
+	} else {
+		if (!TWFunc::Stock_Recovery())
+			op_status = 1;
+	}
+
+	operation_end(op_status);
+	return 0;
+}
+
+int GUIAction::signboot(std::string arg __unused)
+{
+	int op_status = 0;
+
+	operation_start("Sign Boot");
+	if (simulate) {
+		simulate_progress_bar();
+	} else {
+		if (!TWFunc::Sign_Boot())
 			op_status = 1;
 	}
 

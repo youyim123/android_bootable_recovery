@@ -694,5 +694,22 @@
 		<string name="include_kernel_log">Include Kernel Log</string>
 		<string name="sha2_chk">Use SHA2 for hashing</string>
 		<string name="unable_set_boot_slot">Error changing bootloader boot slot to {1}</string>
+		<string name="author_youyim">by Youyim  %recovery_build_date%</string>
+		<string name="youyim_tools">Youyim Tools</string>
+		<string name="youyim_tools_hdr">Youyim Tools</string>
+		<string name="stock_recovery_btn">Stock Recovery</string>
+		<string name="flash_stock_recovery_confirm">Flash Stock Recovery?</string>
+		<string name="flash_stock_recovery">Flashing Stock Recovery...</string>
+		<string name="flash_stock_recovery2">only work on stock ROM</string>
+		<string name="flash_stock_recovery3">It does not work,please flash Stock ROM</string>
+		<string name="flash_stock_recovery_complete">Flash Stock Recovery Complete</string>
+		<string name="verified_bootsigner_btn">Verified BootSigner</string>
+		<string name="verifiedbootsigner_device_confirm">verified bootsigner?</string>
+		<string name="verifiedbootsigner_device">verified bootsigner...</string>
+		<string name="verifiedbootsigner_device_complete">verified bootsigner Complete</string>
+		<string name="wipe_battery_stats_btn">Wipe Battery Stats</string>
+		<string name="wipe_battery_stats_confirm">Wipe Battery Stats?</string>
+		<string name="wipe_battery_stats">Wiping Battery Stats...</string>
+		<string name="wipe_battery_stats_complete">Wipe Battery Stats Complete</string>
 	</resources>
 </language>

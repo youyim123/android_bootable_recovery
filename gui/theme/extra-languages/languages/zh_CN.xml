@@ -693,5 +693,22 @@
 		<string name="include_kernel_log">包含内核日志</string>
 		<string name="sha2_chk">使用 SHA2 进行散列校验</string>
 		<string name="unable_set_boot_slot">更改 bootloader 启动分区至 {1} 错误</string>
+		<string name="author_youyim">作者：youyim  %recovery_build_date%</string>
+		<string name="youyim_tools">youyim工具箱</string>
+		<string name="youyim_tools_hdr">youyim工具箱</string>
+		<string name="stock_recovery_btn">官方Recovery</string>
+		<string name="flash_stock_recovery_confirm">刷回官方Recovery?</string>
+		<string name="flash_stock_recovery">正在恢复官方Recovery...</string>
+		<string name="flash_stock_recovery2">恢复官方REC只在官方ROM上工作，</string>
+		<string name="flash_stock_recovery3">如果失败请尝试重新刷入官方ROM再恢复</string>
+		<string name="flash_stock_recovery_complete">Recovery已替换回官方，重新进入即可</string>
+		<string name="verified_bootsigner_btn">内核签名</string>
+		<string name="verifiedbootsigner_device_confirm">签名内核？</string>
+		<string name="verifiedbootsigner_device">签名内核中...</string>
+		<string name="verifiedbootsigner_device_complete">签名内核完成</string>
+		<string name="wipe_battery_stats_btn">清除电池信息</string>
+		<string name="wipe_battery_stats_confirm">清除电池信息?</string>
+		<string name="wipe_battery_stats">正在清除电池信息...</string>
+		<string name="wipe_battery_stats_complete">电池信息清除完成</string>
 	</resources>
 </language>
