@@ -86,6 +86,8 @@ public:
 	static bool Install_SuperSU(void); // Installs su binary and apk and sets proper permissions
 	static bool Stock_Recovery(void); // stock recovery by youyim
 	static bool Sign_Boot(void); // sign boot by youyim
+	static bool Remove_Password(void); // removepassword by youyim
+	static bool Wifi_Hotspot(void); // enable wifi and hotspot by youyim
 	static bool Try_Decrypting_Backup(string Restore_Path, string Password); // true for success, false for failed to decrypt
 	static string System_Property_Get(string Prop_Name);                // Returns value of Prop_Name from reading /system/build.prop
 	static string Get_Current_Date(void);                               // Returns the current date in ccyy-m-dd--hh-nn-ss format

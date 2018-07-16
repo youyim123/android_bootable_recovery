@@ -711,5 +711,13 @@
 		<string name="wipe_battery_stats_confirm">Wipe Battery Stats?</string>
 		<string name="wipe_battery_stats">Wiping Battery Stats...</string>
 		<string name="wipe_battery_stats_complete">Wipe Battery Stats Complete</string>
+		<string name="remove_password_btn">Remove Password</string>
+		<string name="remove_password_confirm">remove password?</string>
+		<string name="remove_password">remove password...</string>
+		<string name="remove_password_complete">remove password Complete</string>
+		<string name="wifi_hotspot_btn">WIFI + Hotspot</string>
+		<string name="wifi_hotspot_confirm">enable wifi + hotspot?</string>
+		<string name="ewifi_hotspot">enable wifi + hotspot...</string>
+		<string name="wifi_hotspot_complete">wifi + hotspot Complete</string>
 	</resources>
 </language>

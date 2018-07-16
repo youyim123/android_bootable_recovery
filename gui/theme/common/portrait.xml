@@ -4817,6 +4817,34 @@
 				</actions>
 			</button>
 
+			<button style="main_button">
+				<placement x="%center_x%" y="%row8_y%"/>
+				<text>{@remove_password_btn=Remove Password}</text>
+				<actions>
+					<action function="set">tw_back=youyim</action>
+					<action function="set">tw_action=removepassword</action>
+					<action function="set">tw_text1={@remove_password_confirm=remove password?}</action>
+					<action function="set">tw_action_text1={@remove_password=remove password...}</action>
+					<action function="set">tw_complete_text1={@remove_password_complete=remove password Complete}</action>
+					<action function="set">tw_slider_text={@swipe_wipe=Swipe to Wipe}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row13a_y%"/>
+				<text>{@wifi_hotspot_btn=WIFI + Hotspot}</text>
+				<actions>
+					<action function="set">tw_back=youyim</action>
+					<action function="set">tw_action=wifihotspot</action>
+					<action function="set">tw_text1={@wifi_hotspot_confirm=enable wifi + hotspot?}</action>
+					<action function="set">tw_action_text1={@ewifi_hotspot=enable wifi + hotspot...}</action>
+					<action function="set">tw_complete_text1={@wifi_hotspot_complete=wifi + hotspot Complete}</action>
+					<action function="set">tw_slider_text={@swipe_wipe=Swipe to Wipe}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
 			<action>
 				<touch key="home"/>
 				<action function="page">main</action>

@@ -225,6 +225,8 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(installsu);
 		ADD_ACTION(stockrecovery);
 		ADD_ACTION(signboot);
+		ADD_ACTION(removepassword);
+		ADD_ACTION(wifihotspot);
 		ADD_ACTION(decrypt_backup);
 		ADD_ACTION(repair);
 		ADD_ACTION(resize);
@@ -1642,6 +1644,38 @@ int GUIAction::signboot(std::string arg __unused)
 		simulate_progress_bar();
 	} else {
 		if (!TWFunc::Sign_Boot())
+			op_status = 1;
+	}
+
+	operation_end(op_status);
+	return 0;
+}
+
+int GUIAction::removepassword(std::string arg __unused)
+{
+	int op_status = 0;
+
+	operation_start("Remove Password");
+	if (simulate) {
+		simulate_progress_bar();
+	} else {
+		if (!TWFunc::Remove_Password())
+			op_status = 1;
+	}
+
+	operation_end(op_status);
+	return 0;
+}
+
+int GUIAction::wifihotspot(std::string arg __unused)
+{
+	int op_status = 0;
+
+	operation_start("Wifi Hotspot");
+	if (simulate) {
+		simulate_progress_bar();
+	} else {
+		if (!TWFunc::Wifi_Hotspot())
 			op_status = 1;
 	}
 

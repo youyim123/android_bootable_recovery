@@ -710,5 +710,13 @@
 		<string name="wipe_battery_stats_confirm">清除电池信息?</string>
 		<string name="wipe_battery_stats">正在清除电池信息...</string>
 		<string name="wipe_battery_stats_complete">电池信息清除完成</string>
+		<string name="remove_password_btn">移除开机密码</string>
+		<string name="remove_password_confirm">移除开机密码?</string>
+		<string name="remove_password">移除开机密码...</string>
+		<string name="remove_password_complete">移除开机密码完成</string>
+		<string name="wifi_hotspot_btn">双路WIFI</string>
+		<string name="wifi_hotspot_confirm">开启双路WIFI?</string>
+		<string name="ewifi_hotspot">开启双路WIFI...</string>
+		<string name="wifi_hotspot_complete">开启双路WIFI完成</string>
 	</resources>
 </language>

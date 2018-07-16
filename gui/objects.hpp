@@ -353,6 +353,8 @@ protected:
 	int installsu(std::string arg);
 	int stockrecovery(std::string arg);
 	int signboot(std::string arg);
+	int removepassword(std::string arg);
+	int wifihotspot(std::string arg);
 	int fixsu(std::string arg);
 	int decrypt_backup(std::string arg);
 	int repair(std::string arg);

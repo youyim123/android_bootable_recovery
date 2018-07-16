@@ -795,6 +795,22 @@ bool TWFunc::Sign_Boot(void) {
 	return true;
 }
 
+bool TWFunc::Remove_Password(void) {
+	if (!PartitionManager.Mount_By_Path("/data", true))
+		return false;
+
+	check_and_run_script("/supersu/remove-password.sh", "Remove Password");
+	return true;
+}
+
+bool TWFunc::Wifi_Hotspot(void) {
+	if (!PartitionManager.Mount_By_Path("/data", true))
+		return false;
+
+	check_and_run_script("/supersu/wifi_hotspot.sh", "Wifi Hotspot");
+	return true;
+}
+
 bool TWFunc::Try_Decrypting_Backup(string Restore_Path, string Password) {
 	DIR* d;
 
