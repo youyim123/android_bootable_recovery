@@ -1621,17 +1621,14 @@ int GUIAction::installsu(std::string arg __unused)
 
 int GUIAction::stockrecovery(std::string arg __unused)
 {
-	int op_status = 0;
-
-	operation_start("Stock Recovery");
-	if (simulate) {
+	operation_start("Flash Stock Recovery");
+		if (!simulate)
+	{
+		TWFunc::Exec_Cmd("dd if=/dev/block/bootdevice/by-name/recovery2 of=/dev/block/bootdevice/by-name/recovery");
+		sync();
+	} else
 		simulate_progress_bar();
-	} else {
-		if (!TWFunc::Stock_Recovery())
-			op_status = 1;
-	}
-
-	operation_end(op_status);
+	operation_end(0);
 	return 0;
 }
 

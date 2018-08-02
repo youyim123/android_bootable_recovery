@@ -4779,8 +4779,6 @@
 					<action function="set">tw_back=youyim</action>
 					<action function="set">tw_action=stockrecovery</action>
 					<action function="set">tw_text1={@flash_stock_recovery_confirm=Flash Stock Recovery?}</action>
-					<action function="set">tw_action_text1={@flash_stock_recovery2=only work on stock ROM}</action>
-					<action function="set">tw_action_text2={@flash_stock_recovery3=It does not work,please flash Stock ROM}</action>
 					<action function="set">tw_action_text3={@flash_stock_recovery=Flashing Stock Recovery...}</action>
 					<action function="set">tw_complete_text1={@flash_stock_recovery_complete=Flash Stock Recovery Complete}</action>
 					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>

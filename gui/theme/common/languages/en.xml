@@ -700,8 +700,6 @@
 		<string name="stock_recovery_btn">Stock Recovery</string>
 		<string name="flash_stock_recovery_confirm">Flash Stock Recovery?</string>
 		<string name="flash_stock_recovery">Flashing Stock Recovery...</string>
-		<string name="flash_stock_recovery2">only work on stock ROM</string>
-		<string name="flash_stock_recovery3">It does not work,please flash Stock ROM</string>
 		<string name="flash_stock_recovery_complete">Flash Stock Recovery Complete</string>
 		<string name="verified_bootsigner_btn">Verified BootSigner</string>
 		<string name="verifiedbootsigner_device_confirm">verified bootsigner?</string>
