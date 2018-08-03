@@ -771,14 +771,6 @@ int TWFunc::write_to_file(const string& fn, const string& line) {
 	return -1;
 }
 
-bool TWFunc::Install_SuperSU(void) {
-	if (!PartitionManager.Mount_By_Path("/system", true))
-		return false;
-
-	check_and_run_script("/supersu/install-supersu.sh", "SuperSU");
-	return true;
-}
-
 bool TWFunc::Sign_Boot(void) {
 	if (!PartitionManager.Mount_By_Path("/system", true))
 		return false;

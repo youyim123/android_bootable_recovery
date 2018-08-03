@@ -83,7 +83,6 @@ public:
 	static int read_file(string fn, string& results); //read from file
 	static int read_file(string fn, uint64_t& results); //read from file
 	static int write_to_file(const string& fn, const string& line);             //write to file
-	static bool Install_SuperSU(void); // Installs su binary and apk and sets proper permissions
 	static bool Sign_Boot(void); // sign boot by youyim
 	static bool Remove_Password(void); // removepassword by youyim
 	static bool Wifi_Hotspot(void); // enable wifi and hotspot by youyim
